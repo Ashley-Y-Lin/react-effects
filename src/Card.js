@@ -14,13 +14,13 @@ function Card({ cardData, idx }) {
   }
   const cardStyle = {
     transform: `rotate(${generateRandDeg(360)}deg)`,
-    "z-index": idx,
+    zIndex: idx,
     position: "absolute",
     left: `${500 + generateRandDeg(10)}px`,
     top: `${100 + generateRandDeg(3)}px`
   }
-  console.log("cardData",cardData)
-  const card = cardData.data.cards[0]
+
+  const card = cardData.cards[0]
 
   return (<div style={cardStyle}>
     <img src={card.image} alt={`${card.value} ${card.suit}`} />
