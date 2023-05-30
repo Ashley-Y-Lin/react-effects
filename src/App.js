@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import DeckOfCards from "./DeckOfCards";
 
 function App() {
